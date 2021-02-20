@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
 import '../view_model/wrapper_view_model.dart';
+import '../widget/get_index_header.dart';
 import '../widget/get_index_view.dart';
 
 class WrapperView extends StatelessWidget {
@@ -12,8 +13,20 @@ class WrapperView extends StatelessWidget {
     return ViewModelBuilder<WrapperViewModel>.reactive(
       builder: (_, model, __) {
         return Scaffold(
-          body: GetIndexView(
-            index: model.currentIndex,
+          body: Container(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                GetIndexHeader(
+                  index: model.currentIndex,
+                ),
+                Expanded(
+                  child: GetIndexView(
+                    index: model.currentIndex,
+                  ),
+                ),
+              ],
+            ),
           ),
           floatingActionButton: FloatingActionButton(
             onPressed: () {},
