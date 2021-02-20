@@ -25,10 +25,30 @@ class WrapperView extends StatelessWidget {
             currentIndex: model.currentIndex,
             onTap: model.setIndex,
             items: [
-              BottomNavigationBarItem(icon: Icon(Icons.home)),
-              BottomNavigationBarItem(icon: Icon(Icons.wallet_giftcard)),
-              BottomNavigationBarItem(icon: Icon(Icons.pie_chart)),
-              BottomNavigationBarItem(icon: Icon(Icons.settings)),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.home,
+                ),
+                label: 'Home',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.wallet_giftcard,
+                ),
+                label: 'Wallets',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.pie_chart,
+                ),
+                label: 'Reports',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.settings,
+                ),
+                label: 'Settings',
+              ),
             ],
           ),
         );
