@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// Kindly know that is class has not been tested and trusted yet
+// Kindly know that this class has not been tested and trusted yet
 class ScreenUtil {
   // This accepts the design height
   double _designHeight;
