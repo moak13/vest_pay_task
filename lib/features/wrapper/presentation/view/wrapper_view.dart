@@ -21,6 +21,7 @@ class WrapperView extends StatelessWidget {
                   index: model.currentIndex,
                 ),
                 Expanded(
+                  flex: 2,
                   child: GetIndexView(
                     index: model.currentIndex,
                   ),
