@@ -1,4 +1,4 @@
-import '../../../common/extensions/string_extensions.dart';
+import '../../../common/utils/app_icons.dart';
 
 class SettingsModel {
   final String title;
@@ -8,14 +8,44 @@ class SettingsModel {
 }
 
 List<SettingsModel> data = [
-  SettingsModel(title: 'Profile Information', iconPath: 'i'.svg),
-  SettingsModel(title: 'Password', iconPath: 'lock'.svg),
-  SettingsModel(title: 'Email', iconPath: 'email'.svg),
-  SettingsModel(title: 'Phone Number', iconPath: 'call'.svg),
-  SettingsModel(title: 'Notifications', iconPath: 'notifications'.svg),
-  SettingsModel(title: 'Currency', iconPath: 'dollar'.svg),
-  SettingsModel(title: 'Language', iconPath: 'world'.svg),
-  SettingsModel(title: 'Account', iconPath: 'user'.svg),
-  SettingsModel(title: 'Private Policy', iconPath: 'privacy'.svg),
-  SettingsModel(title: 'Terms of Use', iconPath: 'question'.svg),
+  SettingsModel(
+    title: 'Profile Information',
+    iconPath: AppIcons.app_information,
+  ),
+  SettingsModel(
+    title: 'Password',
+    iconPath: AppIcons.app_password,
+  ),
+  SettingsModel(
+    title: 'Email',
+    iconPath: AppIcons.app_email,
+  ),
+  SettingsModel(
+    title: 'Phone Number',
+    iconPath: AppIcons.app_phone,
+  ),
+  SettingsModel(
+    title: 'Notifications',
+    iconPath: AppIcons.app_notifications,
+  ),
+  SettingsModel(
+    title: 'Currency',
+    iconPath: AppIcons.app_currency,
+  ),
+  SettingsModel(
+    title: 'Language',
+    iconPath: AppIcons.app_language,
+  ),
+  SettingsModel(
+    title: 'Account',
+    iconPath: AppIcons.app_account,
+  ),
+  SettingsModel(
+    title: 'Private Policy',
+    iconPath: AppIcons.app_privacy,
+  ),
+  SettingsModel(
+    title: 'Terms of Use',
+    iconPath: AppIcons.app_terms_of_use,
+  ),
 ];
