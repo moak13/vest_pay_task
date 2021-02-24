@@ -1,4 +1,4 @@
-import 'package:vest_pay_test/common/extensions/string_extensions.dart';
+import '../extensions/string_extensions.dart';
 
 class AppIcons {
   AppIcons();
